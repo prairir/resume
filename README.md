@@ -1,28 +1,30 @@
-# ModuLatex Resume
+# Ryan's Resume
 
-## What is it?
+## What is this?
 
-The **ModuLatex resume** is a component-based Latex template optimized for people who need multiple versions of resumes.
+This is my resume. I am using a resume template https://github.com/petezh/Modular-Resume . This resume template is p nice but its not perfect.
 
-👉 Check out [an example](https://github.com/petezh/ModuLatex-Resume/blob/master/resume-general/Peter_Zhang_Resume.pdf)
+I have made some minor changes such as
 
-🍃 Get it on [OverLeaf](https://www.overleaf.com/project/61c8bca6ea9d23cacaf0e8d0)
+- not using emojis
+- pinning and only using fontawesome5
+- adding some nice spaces in between sections
 
-👇 Why you should get it
+## Dependencies
 
-Some advantages over your run-of-the-mill template include:
+- Earthly Build
+- Docker
 
-- Easily make multiple versions of your resume by important different components.
-- A sleek design with pretty emojis. 😌
-- Adjustable, compact structure lets you pack as much content as your heart desires.
-- Sections are customizable to your needs. Add your own custom "volunteering" or "interests" section.
-- Links to your social medias and external sites.
-- ATS-friendly formatting will save you time from manually fixing errors.
+## Build
 
-## How do I use it?
+Run
 
-Be sure to use **LuaLaTeX** if you plan on using the emojis. Otherwise, you can take them out and use any Latex typesetting system. To set it up for yourself, add your background, skills, experiences, projects, education, and awards to separate `.tex` files in the `components` folder. Make a folder for your resume in the root directory and compile! If you move around the main file, be sure to update the file paths.
+```sh
+earthly +build --file="<file name>"
+```
 
-## Have a question?
+Where `<file name>` is the file you want to compile without the `.tex`
 
-Feel free to reach out to me on [Facebook](https://www.facebook.com/petejzh/) or at [petez@berkeley.edu](mailto:petez@berkeley.edu) for questions!
+This system has been chosen so you can have multiple templates and still use the same components
+
+This will create a file `<file name>.pdf`
