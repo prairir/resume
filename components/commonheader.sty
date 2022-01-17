@@ -1,0 +1,29 @@
+\usepackage{geometry}
+\usepackage{indentfirst}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage{bbding}
+\usepackage{import}
+\usepackage{emoji}
+\usepackage{xcolor}
+\usepackage[fixed]{fontawesome5}
+
+\pagestyle{empty}
+\geometry{margin=0.5in}
+\setlength\parindent{9pt}
+\setlist{nosep}
+\renewcommand\labelitemi{--}
+
+% hide url boxes
+\hypersetup{hidelinks}
+\urlstyle{same}
+
+\definecolor{highlight}{RGB}{0,0,0}
+
+\newcommand{\name}[1]{\begin{center}\section*{\Huge \color{highlight} #1}\vspace{-0.8cm}\end{center}}
+\newcommand{\topinfo}[1]{\begin{center}\vspace{-0.1cm}#1\vspace{-0.3cm}\end{center}}
+\newcommand{\resumesection}[1]{\vspace{-0.5cm}\section*{\color{highlight}#1}\vspace{-0.2cm}\hrule\vspace{0.2cm}}
+
+\renewcommand{\familydefault}{\sfdefault}
