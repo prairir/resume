@@ -1,5 +1,5 @@
 build:
-	FROM ubuntu:21.04
+	FROM ubuntu:22.04
 
 	# install dependencies
 	RUN apt-get update -yqq && \
